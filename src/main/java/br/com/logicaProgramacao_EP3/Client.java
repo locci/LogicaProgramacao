@@ -27,14 +27,16 @@ public class Client {
 
 
 class ClientCommon extends Client{
-	public void register(){
+	public void register() throws IllegalArgumentException{
+		String value = "leonardo";
+
 		testOne("Leonardo");
 	}
 }
 
 
-class ClientSpecial extends Client{
-	public void register(){
+class ClientSpecial extends Client {
+	public void register() throws IllegalArgumentException{
 		testTwo(null);
 		
 	}
